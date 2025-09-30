@@ -1,0 +1,11 @@
+#!/bin/bash
+# decimal_to_hex.sh - convert $DECIMAL from base 10 to base 16
+
+if [ -z "$DECIMAL" ]; then
+  echo "Error: DECIMAL is not set."
+  exit 1
+fi
+
+# Convert to hexadecimal
+printf "%x\n" "$DECIMAL"
+
