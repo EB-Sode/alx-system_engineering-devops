@@ -1,27 +1,2 @@
 #!/bin/bash
-# divide_vars.sh - divide $POWER by $DIVIDE
-
-# Check that POWER is set
-if [ -z "$POWER" ]; then
-  echo "Error: POWER is not set."
-  exit 1
-fi
-
-# Check that DIVIDE is set
-if [ -z "$DIVIDE" ]; then
-  echo "Error: DIVIDE is not set."
-  exit 1
-fi
-
-# Check that DIVIDE is not zero
-if [ "$DIVIDE" -eq 0 ] 2>/dev/null; then
-  echo "Error: DIVIDE cannot be zero."
-  exit 1
-fi
-
-# Perform integer division
-result=$((POWER / DIVIDE))
-
-# Print the result
-echo "$result"
-
+echo $((POWER / DIVIDE))

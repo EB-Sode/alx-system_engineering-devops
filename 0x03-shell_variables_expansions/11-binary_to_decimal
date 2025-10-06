@@ -1,21 +1,2 @@
 #!/bin/bash
-# binary_to_decimal.sh - convert binary number in $BINARY to decimal
-
-# Check that BINARY is set
-if [ -z "$BINARY" ]; then
-  echo "Error: BINARY is not set."
-  exit 1
-fi
-
-# Validate that BINARY contains only 0s and 1s
-if ! [[ "$BINARY" =~ ^[01]+$ ]]; then
-  echo "Error: BINARY must contain only 0s and 1s."
-  exit 1
-fi
-
-# Convert from base 2 to base 10 using arithmetic expansion
-decimal=$((2#$BINARY))
-
-# Print result
-echo "$decimal"
-
+echo $((2#$BINARY))

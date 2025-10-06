@@ -1,2 +1,2 @@
 #!/bin/bash
-( printenv; declare -p 2>/dev/null; declare -F ) | sort
+set

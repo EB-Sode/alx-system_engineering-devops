@@ -1,10 +1,2 @@
 #!/bin/bash
-# two_decimals.sh - print $NUM with two decimal places
-
-if [ -z "$NUM" ]; then
-  echo "Error: NUM is not set."
-  exit 1
-fi
-
 printf "%.2f\n" "$NUM"
-

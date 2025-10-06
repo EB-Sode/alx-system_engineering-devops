@@ -1,21 +1,2 @@
 #!/bin/bash
-# power_vars.sh - compute BREATH raised to the power LOVE
-
-# Check that BREATH is set
-if [ -z "$BREATH" ]; then
-  echo "Error: BREATH is not set."
-  exit 1
-fi
-
-# Check that LOVE is set
-if [ -z "$LOVE" ]; then
-  echo "Error: LOVE is not set."
-  exit 1
-fi
-
-# Perform exponentiation (integer arithmetic)
-result=$((BREATH ** LOVE))
-
-# Print the result
-echo "$result"
-
+echo $((BREATH ** LOVE))

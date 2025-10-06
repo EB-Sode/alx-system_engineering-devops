@@ -1,2 +1,2 @@
 #!/bin/bash
-if ! echo "$PATH" | grep -q "/action" then export PATH="$PATH:/action" fi echo "Updated PATH: $PATH"
+echo "Updated PATH: $PATH"
