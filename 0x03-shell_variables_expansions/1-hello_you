@@ -1,8 +1,3 @@
 #!/bin/bash
-Huser="${SUDO_USER:-${LOGNAME:-}}"
+user="${SUDO_USER:-${LOGNAME:-$(id -un 2>/dev/null || whoami 2>/dev/null || echo unknown)}}"; echo "Hello $user"
 
-if [ -z "$user" ]; then
-  user=$(id -un 2>/dev/null || whoami 2>/dev/null || echo "unknown")
-fi
-
-echo "Hello $user"

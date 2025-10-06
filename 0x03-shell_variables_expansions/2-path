@@ -1,15 +1,2 @@
-
 #!/bin/bash
-# add_action_to_path.sh - append /action to PATH if not already present
-
-case ":$PATH:" in
-  *":/action:"*) 
-    # already in PATH, do nothing
-    ;;
-  *) 
-    export PATH="$PATH:/action"
-    ;;
-esac
-
-echo "Updated PATH: $PATH"
-
+if ! echo "$PATH" | grep -q "/action" then export PATH="$PATH:/action" fi echo "Updated PATH: $PATH"
