@@ -1,3 +1,2 @@
 #!/bin/bash
 user="${SUDO_USER:-${LOGNAME:-$(id -un 2>/dev/null || whoami 2>/dev/null || echo unknown)}}"; echo "Hello $user"
-

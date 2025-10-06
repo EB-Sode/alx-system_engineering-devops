@@ -1,6 +1,2 @@
 #!/bin/bash
-# count_path_dirs.sh - count the number of directories in $PATH
-
-count=$(echo "$PATH" | tr ':' '\n' | wc -l)
-
-echo "Number of directories in PATH: $count"
+echo "Number of directories in PATH: $(echo "$PATH" | tr ':' '\n' | wc -l)"
