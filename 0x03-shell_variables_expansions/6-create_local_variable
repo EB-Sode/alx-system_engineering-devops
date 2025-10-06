@@ -1,9 +1,2 @@
 #!/bin/bash
-# create_local_var.sh - create a local variable BEST with value "School"
-
-create_var() {
-    local BEST="School"
-    echo "Inside function: BEST=$BEST"
-}
-
-create_var
+BEST="School"; echo "Inside function: BEST=$BEST"

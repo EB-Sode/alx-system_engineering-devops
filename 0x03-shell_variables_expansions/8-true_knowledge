@@ -1,15 +1,2 @@
 #!/bin/bash
-# add_trueknowledge.sh - add 128 to $TRUEKNOWLEDGE
-
-# Ensure the variable is set
-if [ -z "$TRUEKNOWLEDGE" ]; then
-  echo "Error: TRUEKNOWLEDGE is not set."
-  exit 1
-fi
-
-# Perform the addition using arithmetic expansion
-result=$((128 + TRUEKNOWLEDGE))
-
-# Print the result followed by a new line
-echo "$result"
-
+echo $((128 + TRUEKNOWLEDGE))
